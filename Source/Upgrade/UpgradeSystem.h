@@ -3,7 +3,7 @@
 #include "CoreMinimal.h"
 #include "UObject/NoExportTypes.h"
 #include "UpgradeLevel.h"
-#include "UpgradeComponent.generated.h"
+#include "UpgradeSystem.generated.h"
 
 USTRUCT(BlueprintType)
 struct FUpgradeData
@@ -18,12 +18,12 @@ struct FUpgradeData
 };
 
 UCLASS(Blueprintable, BlueprintType)
-class YOURGAME_API UUpgradeComponent : public UObject
+class YOURGAME_API UUpgradeSystem : public UObject
 {
     GENERATED_BODY()
 
 public:
-    UUpgradeComponent();
+    UUpgradeSystem();
 
     /** Target Actor to upgrade */
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Upgrade")
